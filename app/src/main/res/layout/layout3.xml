@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#424242">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="VALORA ESTA APLICACION"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilidad:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_gravity="center|start"/>
+
+        <RatingBar
+            android:id="@+id/ratingUtilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="0.5"
+            android:theme="@style/Widget.AppCompat.RatingBar"
+            android:layout_gravity="center"
+            android:progressTint="#9D00FF"
+            android:progressBackgroundTint="#519D00FF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diseño:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_gravity="center|start"/>
+
+        <RatingBar
+            android:id="@+id/ratingDiseno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="0.5"
+            android:theme="@style/Widget.AppCompat.RatingBar"
+            android:layout_gravity="center"
+            android:progressTint="#9D00FF"
+            android:progressBackgroundTint="#519D00FF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Funcionalidad:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_gravity="center|start"/>
+
+        <RatingBar
+            android:id="@+id/ratingFuncionalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="0.5"
+            android:theme="@style/Widget.AppCompat.RatingBar"
+            android:layout_gravity="center"
+            android:progressTint="#9D00FF"
+            android:progressBackgroundTint="#519D00FF"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnMandar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20sp"
+        android:text="Mandar"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20sp"
+        android:text="Inicio"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtMandado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muchas gracias por valorar esta aplicacion, tus valoraciones son las siguientes:\n"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+</LinearLayout>
