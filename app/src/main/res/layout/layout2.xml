@@ -23,7 +23,8 @@
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:background="@color/white" />
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +38,8 @@
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:background="@color/white" />
+            android:background="@color/white"
+            android:textColor="@color/black"/>
 
         <CheckBox
             android:id="@+id/checkRecor"
@@ -45,7 +47,6 @@
             android:layout_height="wrap_content"
             android:text="Crear recordatorio"
             android:textColor="@color/white"
-            android:buttonTint="#757575"
             android:layout_column="1"
             android:layout_marginStart="10sp"/>
 
